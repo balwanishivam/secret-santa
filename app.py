@@ -104,8 +104,8 @@ def main():
                 success_count = 0
                 for giver, receiver in assignments.items():
                     if send_email(
-                        st.secrets['smtp']["sender_email"],
-                        st.secrets['smtp']["sender_password"],
+                        st.secrets['EMAIL'],
+                        st.secrets['PASSWORD'],
                         participants_dict[giver],
                         giver,
                         receiver
